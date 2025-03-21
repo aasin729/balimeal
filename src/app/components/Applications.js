@@ -45,7 +45,7 @@ export default function Applications() {
         <p className="text-left text-3xl text-black mb-12 font-semibold">
           복잡한 식품 추천은 iF® API에게 맡기고,<br />기업은 브랜드 가치를 높이는데 집중할 수 있습니다.
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 text-left">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-left">
           {features.map((feature, index) => {
             // 그룹화된 딜레이 설정 (0ms 또는 300ms)
             const delay = index < 3 ? 0 : 300;
@@ -53,7 +53,7 @@ export default function Applications() {
             return (
               <div
                 key={index}
-                className="flex flex-col items-center text-center p-4 bg-gray-50 rounded-lg"
+                className="flex flex-col items-center text-center p-4 rounded-lg"
               >
                 <Image
                   src={feature.icon}
@@ -73,7 +73,7 @@ export default function Applications() {
           })}
         </div>
       </section>
-      
+
       {/* Applications */}
       <section className="max-w-6xl mx-auto text-center p-12">
         <h2 className="text-xl font-bold mb-6 text-left text-purple-700">Applications</h2>

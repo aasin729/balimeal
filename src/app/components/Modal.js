@@ -42,7 +42,8 @@ export default function Modal({ isOpen, onClose }) {
       <div
         ref={modalRef}
         className={`bg-white text-black w-[90%] md:max-w-5xl p-6 md:p-10 rounded-xl relative 
-          transform transition-all duration-300 ${animationClass}`}
+          transform transition-all duration-300 ${animationClass}
+          max-h-[60vh] overflow-y-auto scrollbar-hide`}
       >
         {/* 닫기 버튼 */}
         <button
